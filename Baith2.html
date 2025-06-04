@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Baith2.css">
+    <title>Bài thực hành số 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BIỂU MẪU ĐĂNG KÝ</h1>
+        <form >
+            <label for="name"><b>Họ và Tên:</b></label>
+            <input type="text" id ="name" placeholder="Nhập họ và tên">
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" placeholder="Nhập email">
+            <div style="display: flex; gap: 20px;">
+                <div style="flex: 1;">
+                    <label for="phone"><b>Số điện thoại</b></label>
+                    <input type="tel" id="phone" placeholder="Enter phone number">
+                </div>
+                <div style="flex: 1;">
+                    <label for="dob"><b>Ngày sinh</b></label>
+                    <input type="date" id="dob">
+                </div>
+            </div>
+            <label for="gender"><b>Giới Tính</b></label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Nam" checked>Nam</label>
+                <label><input type="radio" name="gender" value="Nữ">Nữ</label>
+            </div>
+            <label for="course"><b>Chọn khóa học</b></label>
+            <select id="course">
+                <option value="">Chọn Khóa Học</option>
+                <option value="web">Lập trình web</option>
+                <option value="mobile">Lập trình di động</option>
+                <option value="desgin">Thiết kế web</option>
+                <option value="database">Cơ sở dữ liệu</option>
+            </select>
+            <div class="actions">
+                <button type="reset" style="border-color: #7a5cff;">Nhập lại</button>
+                <button type="submit" style="background-color:  #7a5cff; color: white;">Đăng ký</button>
+            </div>
+        </form>
+        <hr>
+        <h2 style="text-align: center;">ĐÃ ĐĂNG KÝ</h2>
+        <table>
+            <thead>
+                <tr style="background-color: #7a5cff; color: white;">
+                    <th>STT</th>
+                    <th>Môn Học</th>
+                    <th>Giảng Viên</th>
+                    <th>Tác Vụ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lập trình web</td>
+                    <td>Nguyễn Văn A</td>
+                    <td><span class="cancel">Hủy đăng ký</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lập trình di động</td>
+                    <td>Nguyễn Văn A</td>
+                    <td><span class="cancel">Hủy đăng ký</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Thiết kế web</td>
+                    <td>Nguyễn Văn A</td>
+                    <td><span class="cancel">Hủy đăng ký</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cơ sở dữ liệu</td>
+                    <td>Nguyễn Văn A</td>
+                    <td><span class="cancel">Hủy đăng ký</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
