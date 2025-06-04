@@ -1,45 +1,4 @@
-.item
-{
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-}
-.image
-{
-    width: 200px;
-    height: 100px;
-    margin-right: 20px;
-    margin-top: 30px;
-    display: block;
-}
-.content{
-    display: none;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-}
-.item:hover .content
-{
-    display: block;
-}
-.muiten
-{
-    transition: transform 0.3s ease;
-    margin-right: 5px;
-}
-.item:hover .muiten
-{
-    transform: rotate(90deg);
-}
-.it_name
-{
-    position: relative;
-}
-.muiten
-{
-    position: absolute;
-    left: -20px;
-    top: -5px;
-}
+
 .col
 {
     color: blueviolet;
