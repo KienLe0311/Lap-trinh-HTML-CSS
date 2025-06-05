@@ -40,7 +40,13 @@ input, select, button {
 .gender 
 {
            display: flex;
+           gap : 20px;
+           align-items: center;
 }
+.gender label
+{
+            display: flex;
+        }
 .actions {
             display: flex;
             justify-content: space-between;
@@ -63,3 +69,4 @@ table {
 tr:nth-child(even) {
             background-color: #e7e3fe;
         }
+

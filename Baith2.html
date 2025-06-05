@@ -11,35 +11,35 @@
         <h1>BIỂU MẪU ĐĂNG KÝ</h1>
         <form >
             <label for="name"><b>Họ và Tên:</b></label>
-            <input type="text" id ="name" placeholder="Nhập họ và tên">
+            <input type="text" id ="name" placeholder="Nhập họ và tên" style="margin-top: 5px; border: none; border-bottom: 1px solid grey;border-radius:0;padding: 8px;">
             <label for="email"><b>Email</b></label>
-            <input type="email" id="email" placeholder="Nhập email">
+            <input type="email" id="email" placeholder="Nhập email" style="margin-top: 5px;">
             <div style="display: flex; gap: 20px;">
                 <div style="flex: 1;">
                     <label for="phone"><b>Số điện thoại</b></label>
-                    <input type="tel" id="phone" placeholder="Enter phone number">
+                    <input type="tel" id="phone" placeholder="Enter phone number" style="margin-top: 5px;">
                 </div>
                 <div style="flex: 1;">
                     <label for="dob"><b>Ngày sinh</b></label>
-                    <input type="date" id="dob">
+                    <input type="date" id="dob"style="margin-top: 5px;">
                 </div>
             </div>
             <label for="gender"><b>Giới Tính</b></label>
-            <div class="gender">
+            <div class="gender" style="margin-top: 5px;">
                 <label><input type="radio" name="gender" value="Nam" checked>Nam</label>
                 <label><input type="radio" name="gender" value="Nữ">Nữ</label>
             </div>
             <label for="course"><b>Chọn khóa học</b></label>
-            <select id="course">
+            <select id="course" style="margin-top: 5px;border-radius:0;">
                 <option value="">Chọn Khóa Học</option>
                 <option value="web">Lập trình web</option>
                 <option value="mobile">Lập trình di động</option>
                 <option value="desgin">Thiết kế web</option>
                 <option value="database">Cơ sở dữ liệu</option>
             </select>
-            <div class="actions">
-                <button type="reset" style="border-color: #7a5cff;">Nhập lại</button>
-                <button type="submit" style="background-color:  #7a5cff; color: white;">Đăng ký</button>
+            <div class="actions"style="margin-top: 10px;">
+                <button type="reset" style="border-color: #7a5cff;color: #7a5cff;background-color:white; border-radius:0">Nhập lại</button>
+                <button type="submit" style="background-color:  #7a5cff; color: white;border-radius:0;border-color:#7a5cff">Đăng ký</button>
             </div>
         </form>
         <hr>
