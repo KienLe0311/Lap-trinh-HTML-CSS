@@ -1,3 +1,4 @@
+@media only screen and (min-width: 735px){
 body{
     background-color: #dfdcf1;
     font-family: 'Times New Roman', Times, serif;
@@ -82,4 +83,5 @@ select{
 .gender input[type="radio"] {
     accent-color: #7a5cff;
     border: 1px solid #7a5cff;
+}
 }
