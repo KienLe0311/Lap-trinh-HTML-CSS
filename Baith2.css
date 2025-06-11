@@ -60,9 +60,9 @@ table {
             margin-top: 20px;
         }
         th, td {
-            border: 1px solid #ccc;
             padding: 10px;
             text-align: center;
+            border: none;
         }
         .cancel {
             color: #7a5cff;
@@ -75,7 +75,7 @@ tr:nth-child(even) {
    button{
     width: 95%;
     padding: 15px 15px;
-    border: 1px solid #7a5cff;
+    border: 2px solid #7a5cff;
    }
 select{
     width: 100%;
