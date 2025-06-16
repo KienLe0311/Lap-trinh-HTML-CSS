@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     errorElement.className = "error-message";
     errorElement.style.color = "red";
     errorElement.style.display = "block"; 
+    errorElement.style.textAlign = "right";
     input.parentNode.insertBefore(errorElement, input.nextSibling); 
   }
   errorElement.textContent = message;
