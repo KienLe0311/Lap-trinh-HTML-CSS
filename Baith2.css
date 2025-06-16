@@ -87,6 +87,6 @@ select{
 .error-message {
   color: red;
   margin-bottom: 2px; 
-  text-align: left; 
+  text-align: right; 
 }
 }
