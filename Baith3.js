@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function validateForm() {
     let isValid = true;
-
-    if (!fullNameInput.value.trim()) {
+    const namePattern = /^[A-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯẮẤẴẸẺẼỀẾỂỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰÝỲỴỶỸ][a-zàáâãèéêìíòóôõùúăđĩũơưắấẵẹẻẽềếểệỉịọỏốồổỗộớờởỡợụủứừửữựýỳỵỷỹ]+(?: [A-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯẮẤẴẸẺẼỀẾỂỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰÝỲỴỶỸ][a-zàáâãèéêìíòóôõùúăđĩũơưắấẵẹẻẽềếểệỉịọỏốồổỗộớờởỡợụủứừửữựýỳỵỷỹ]+)*$/;
+    if (!namePattern.test(fullNameInput.value.trim())) {
       showError(fullNameInput, "Họ và tên không hợp lệ.");
       isValid = false;
     } else {
       hideError(fullNameInput);
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern = /^[^@]+@[a-zA-Z0-9]{3,5}\.[a-zA-Z0-9]{3,5}$/;
     if (!emailPattern.test(emailInput.value.trim())) {
       showError(emailInput, "Email không hợp lệ.");
       isValid = false;
@@ -38,9 +38,19 @@ document.addEventListener("DOMContentLoaded", () => {
       showError(dobInput, "Ngày sinh không hợp lệ.");
       isValid = false;
     } else {
+      const dob = new Date(dobInput.value);
+      const today = new Date(); 
+
+    if (dob >= today) {
+      showError(dobInput, "Ngày sinh không được lớn hơn hoặc bằng ngày hiện tại.");
+      isValid = false;
+    }
+    else
+    {
       hideError(dobInput);
     }
-
+    }
+    
     let genderSelected = false;
     genderInputs.forEach((input) => {
       if (input.checked) genderSelected = true;
