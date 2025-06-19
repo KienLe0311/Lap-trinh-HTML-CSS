@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ).map((td) => td.textContent);
 
       if (existingCourses.includes(course)) {
-        alert("Khóa học này đã được đăng ký trước đó.");
+        showError(courseSelect, "Bạn đã đăng ký khóa học này.");
         return;
       }
 
